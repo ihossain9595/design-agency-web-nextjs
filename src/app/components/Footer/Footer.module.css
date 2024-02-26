@@ -1,0 +1,97 @@
+#footer {
+  background-color: #000;
+  padding: 4.8rem 2.4rem 4rem 2.4rem;
+
+  .container_main {
+    margin: 0 auto;
+    max-width: 124rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2.4rem;
+    margin-bottom: 4.8rem;
+
+    .first_box {
+      .logo {
+        width: 20rem;
+      }
+
+      .description {
+        width: 27.5rem;
+        color: #fff;
+        font-size: 1.6rem;
+        margin-bottom: 1em;
+      }
+
+      .icon_boxes {
+        display: flex;
+        gap: 1.2rem;
+
+        .icon_box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #20b15a;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 10rem;
+        }
+        .icon_box:hover {
+          background-color: #1d9f51;
+        }
+      }
+    }
+
+    .second_box {
+      margin-top: 2rem;
+
+      .title {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.2em;
+      }
+
+      .link_box {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        .link {
+          color: #fff;
+          font-size: 1.6rem;
+          text-decoration: none;
+        }
+        .link:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .third_box {
+      margin-top: 2rem;
+
+      .title {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.2em;
+      }
+
+      .description {
+        width: 27.5rem;
+        color: #fff;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .container_copy {
+    margin: 0 auto;
+    max-width: 124rem;
+
+    .copy {
+      color: #fff;
+      font-size: 1.6rem;
+    }
+  }
+}
