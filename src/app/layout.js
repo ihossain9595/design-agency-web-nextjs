@@ -1,28 +1,11 @@
 import "./globals.css";
-
 import { Poppins } from "next/font/google";
-import localFont from "next/font/local";
-
-// Font files can be colocated inside of `app`
 
 // Components
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 const poppins = Poppins({ weight: ["300", "400", "500", "600", "700"], subsets: ["latin"], variable: "--font-poppins" });
-// const metropolis = localFont({
-//   src: [
-//     {
-//       path: "./fonts/Metropolis-Regular.otf",
-//       weight: "400",
-//       style: "normal",
-//     },
-//     {
-//       path: "./fonts/Metropolis-Medium.otf",
-//       weight: "500",
-//       style: "normal",
-//     },
-//   ],
-// });
 
 export const metadata = {
   title: "Create Next App",
@@ -32,7 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body id="root" className={poppins.className}>
+      <body className={poppins.className}>
+        <Header />
         {children}
         <Footer />
       </body>

@@ -1,0 +1,60 @@
+#header {
+  padding: 3.2rem 2.4rem;
+
+  .container {
+    margin: 0 auto;
+    max-width: 124rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    .logo_box {
+      align-self: center;
+
+      .logo {
+        width: 17.5rem;
+        min-width: 17.5rem;
+        height: auto;
+      }
+    }
+
+    .menu_box {
+      align-self: center;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4rem;
+
+      .button_box {
+        display: flex;
+        gap: 2.4rem;
+
+        .button_outline {
+          color: #000;
+          font-size: 1.5rem;
+          font-weight: 500;
+          border: 1px solid #20b15a;
+          border-radius: 1rem;
+          padding: 0.6em 1.6em;
+          text-decoration: none;
+        }
+        .button_outline:hover {
+          color: #fff;
+          background-color: #20b15a;
+        }
+        .button_fill {
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: 500;
+          border: 1px solid #20b15a;
+          background-color: #20b15a;
+          border-radius: 1rem;
+          padding: 0.6em 1.6em;
+          text-decoration: none;
+        }
+        .button_fill:hover {
+          background-color: #1d9f51;
+        }
+      }
+    }
+  }
+}
