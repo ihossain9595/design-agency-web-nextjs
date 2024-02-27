@@ -1,0 +1,18 @@
+#intro {
+  margin-bottom: 4rem;
+
+  .title {
+    color: #20b15a;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.4em;
+  }
+
+  .description {
+    max-width: 50rem;
+    color: #000;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}

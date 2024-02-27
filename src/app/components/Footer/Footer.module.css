@@ -18,15 +18,15 @@
       }
 
       .description {
-        width: 27.5rem;
+        width: 29.7rem;
         color: #fff;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         margin-bottom: 2.4rem;
       }
 
       .icon_boxes {
         display: flex;
-        gap: 1.2rem;
+        gap: 1.6rem;
 
         .icon_box {
           display: flex;

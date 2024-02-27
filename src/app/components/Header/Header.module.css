@@ -14,7 +14,6 @@
     max-width: 124rem;
     display: grid;
     grid-template-columns: auto 1fr;
-    border: 1px solid red;
 
     .logo_box {
       align-self: center;
@@ -52,7 +51,7 @@
         }
         .button_fill {
           color: #fff;
-          font-size: 1.5rem;
+          font-size: 1.6rem;
           font-weight: 500;
           border: 1px solid #20b15a;
           background-color: #20b15a;
