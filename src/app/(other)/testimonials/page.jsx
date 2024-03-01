@@ -15,30 +15,28 @@ const testimonials = [
 
 const testimonialsPage = () => {
   return (
-    <>
-      <section id={styles.testimonial}>
-        <div className={styles.container}>
-          <IntroSection tag="Testimonial List">Better Agency/SEO Solution At Your Fingertips</IntroSection>
+    <section id={styles.testimonial}>
+      <div className={styles.container}>
+        <IntroSection tag="Testimonial List">Better Agency/SEO Solution At Your Fingertips</IntroSection>
 
-          <div id={styles.testimonials}>
-            {testimonials.map((testimonial) => {
-              return (
-                <div key={testimonial.id} className={styles.testimonial_box}>
-                  <span className={styles.image_box}>
-                    <Image className={styles.image} src={testimonial.src} width={256} height={256} alt="Profile picture" />
-                  </span>
+        <div id={styles.testimonials}>
+          {testimonials.map((testimonial) => {
+            return (
+              <div key={testimonial.id} className={styles.testimonial_box}>
+                <span className={styles.image_box}>
+                  <Image className={styles.image} src={testimonial.src} width={256} height={256} alt="Profile picture" />
+                </span>
 
-                  <blockquote className={styles.quote}>{testimonial.quote}</blockquote>
+                <blockquote className={styles.quote}>{testimonial.quote}</blockquote>
 
-                  <h3 className={styles.name}>{testimonial.name}</h3>
-                  <span className={styles.designation}>{testimonial.designation}</span>
-                </div>
-              );
-            })}
-          </div>
+                <h3 className={styles.name}>{testimonial.name}</h3>
+                <span className={styles.designation}>{testimonial.designation}</span>
+              </div>
+            );
+          })}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
