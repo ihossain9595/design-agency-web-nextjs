@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 import IntroSection from "@/app/components/IntroSection/IntroSection";
+import SubscribeSection from "@/app/components/SubscribeSection/SubscribeSection";
 
 const projects = [
   { id: 1, src: "/images/project_6.png", title: "Lorem ipsum dolor sit consectutar" },
@@ -15,25 +16,33 @@ const projects = [
 
 const projectsPage = () => {
   return (
-    <section id={styles.project}>
-      <div className={styles.container}>
-        <IntroSection tag="All Project">Better Agency/SEO Solution At Your Fingertips</IntroSection>
+    <>
+      <section id={styles.project}>
+        <div className={styles.container}>
+          <IntroSection tag="All Project">Better Agency/SEO Solution At Your Fingertips</IntroSection>
 
-        <div id={styles.projects}>
-          {projects.map((project) => {
-            return (
-              <div key={project.id} className={styles.project_box}>
-                <span className={styles.image_box}>
-                  <Image className={styles.image} src={project.src} width={1080} height={938} alt={project.title} />
-                </span>
+          <div id={styles.projects}>
+            {projects.map((project) => {
+              return (
+                <div key={project.id} className={styles.project_box}>
+                  <span className={styles.image_box}>
+                    <Image className={styles.image} src={project.src} width={1080} height={938} alt={project.title} />
+                  </span>
 
-                <h3 className={styles.title}>{project.title}</h3>
-              </div>
-            );
-          })}
+                  <h3 className={styles.title}>{project.title}</h3>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id={styles.subscribe}>
+        <div className={styles.container}>
+          <SubscribeSection />
+        </div>
+      </section>
+    </>
   );
 };
 
