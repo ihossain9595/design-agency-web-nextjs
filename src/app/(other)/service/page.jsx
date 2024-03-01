@@ -66,7 +66,7 @@ const servicePage = () => {
 
                 <div className={styles.image_box}>
                   {service.images.map((image) => {
-                    return <Image key={image.id} className={styles.image} src={image.src} width={image.width} height={image.height} alt={image.title} />;
+                    return <Image key={image.id} className={styles.image} src={image.src} width={image.width} height={image.height} alt={image.alt} />;
                   })}
                 </div>
               </div>
