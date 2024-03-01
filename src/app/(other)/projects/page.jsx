@@ -26,7 +26,7 @@ const projectsPage = () => {
               return (
                 <div key={project.id} className={styles.project_box}>
                   <span className={styles.image_box}>
-                    <Image className={styles.image} src={project.src} width={1080} height={938} alt={project.title} />
+                    <Image className={styles.image} src={project.src} width={1080} height={938} alt={project.title} placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNU2BhVDwAD0AGstD8TswAAAABJRU5ErkJggg==" />
                   </span>
 
                   <h3 className={styles.title}>{project.title}</h3>

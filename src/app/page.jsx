@@ -126,7 +126,7 @@ const homePage = () => {
             <div className={styles.right_box}>
               <div className={styles.image_box}>
                 {images.map((image) => {
-                  return <Image key={image.id} className={styles.image} src={image.src} width={image.width} height={image.height} alt={image.alt} />;
+                  return <Image key={image.id} className={styles.image} src={image.src} width={image.width} height={image.height} alt={image.alt} placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNU2BhVDwAD0AGstD8TswAAAABJRU5ErkJggg==" />;
                 })}
               </div>
             </div>
@@ -137,7 +137,7 @@ const homePage = () => {
           <div className={styles.container}>
             <div className={styles.logo_box}>
               {logos.map((logo) => {
-                return <Image key={logo.id} className={styles.logo} src={logo.src} width={logo.width} height={logo.height} alt={logo.alt} />;
+                return <Image key={logo.id} className={styles.logo} src={logo.src} width={logo.width} height={logo.height} alt={logo.alt} placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8Gi9bDwAFtAHyodATsgAAAABJRU5ErkJggg==" />;
               })}
             </div>
           </div>
@@ -195,7 +195,7 @@ const homePage = () => {
           <div id={styles.features}>
             <div className={styles.feature_left_box}>
               <div className={styles.image_box}>
-                <Image className={styles.image} src={feature[0].image.src} width={feature[0].image.width} height={feature[0].image.height} alt={feature[0].image.alt} />
+                <Image className={styles.image} src={feature[0].image.src} width={feature[0].image.width} height={feature[0].image.height} alt={feature[0].image.alt} placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNU2BhVDwAD0AGstD8TswAAAABJRU5ErkJggg==" />
               </div>
 
               <div className={styles.info_box}>
@@ -209,7 +209,7 @@ const homePage = () => {
                 return (
                   <div key={feature.id} className={styles.feature_right_box}>
                     <div className={styles.image_box}>
-                      <Image className={styles.image} src={feature.image.src} width={feature.image.width} height={feature.image.height} alt={feature.image.alt} />
+                      <Image className={styles.image} src={feature.image.src} width={feature.image.width} height={feature.image.height} alt={feature.image.alt} placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNU2BhVDwAD0AGstD8TswAAAABJRU5ErkJggg==" />
                     </div>
 
                     <div className={styles.info_box}>

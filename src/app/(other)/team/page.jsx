@@ -140,7 +140,7 @@ const teamPage = () => {
               return (
                 <div key={team.id} className={styles.team_box}>
                   <div className={styles.image_box}>
-                    <Image key={team.id} className={styles.image} src={team.picture.src} width={team.picture.width} height={team.picture.height} alt={team.picture.alt} />
+                    <Image key={team.id} className={styles.image} src={team.picture.src} width={team.picture.width} height={team.picture.height} alt={team.picture.alt} placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNU2BhVDwAD0AGstD8TswAAAABJRU5ErkJggg==" />
                     <div className={styles.icon_boxes}>
                       {team.socials.map((social) => {
                         return (

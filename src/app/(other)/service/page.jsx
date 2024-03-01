@@ -68,7 +68,7 @@ const servicePage = () => {
 
                   <div className={styles.image_box}>
                     {service.images.map((image) => {
-                      return <Image key={image.id} className={styles.image} src={image.src} width={image.width} height={image.height} alt={image.alt} />;
+                      return <Image key={image.id} className={styles.image} src={image.src} width={image.width} height={image.height} alt={image.alt} placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNU2BhVDwAD0AGstD8TswAAAABJRU5ErkJggg==" />;
                     })}
                   </div>
                 </div>
