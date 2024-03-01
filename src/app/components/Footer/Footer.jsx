@@ -14,7 +14,9 @@ const Footer = () => {
     <footer id={styles.footer}>
       <div className={styles.container_main}>
         <div className={styles.first_box}>
-          <Image className={styles.logo} src={"logos/logo_web_logo.svg"} width={507} height={71} alt="Web logo" />
+          <Link href="/">
+            <Image className={styles.logo} src={"logos/logo_web_logo.svg"} width={507} height={71} alt="Web logo" />
+          </Link>
           <p className={styles.description}>Some footer text about the Agency. Just a little description to help people understand you better</p>
           <div className={styles.icon_boxes}>
             {icons.map((icon) => {

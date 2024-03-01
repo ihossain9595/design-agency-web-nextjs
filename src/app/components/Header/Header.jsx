@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <header id={styles.header}>
       <div className={styles.container}>
-        <div className={styles.logo_box}>
+        <Link className={styles.logo_box} href="/">
           <Image className={styles.logo} src={"logos/logo_design_agency.svg"} width={509} height={72} alt="Design Agency logo" />
-        </div>
+        </Link>
         <div className={styles.menu_box}>
           <Menubar />
           <div className={styles.button_box}>

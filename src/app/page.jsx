@@ -224,11 +224,7 @@ const homePage = () => {
         </div>
       </section>
 
-      <section id={styles.subscribe}>
-        <div className={styles.container}>
-          <SubscribeSection />
-        </div>
-      </section>
+      <SubscribeSection />
     </>
   );
 };
